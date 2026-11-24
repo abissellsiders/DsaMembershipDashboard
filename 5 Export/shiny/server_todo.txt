@@ -1,0 +1,15 @@
+2. Host with Open-Source Shiny Server (Linux)
+
+If you have installed the dedicated Posit Shiny Server software on a Linux server (like Ubuntu), it runs as a background system service rather than inside an R script.
+• Deploy Your App: Place your application folder inside the default server directory:bash
+sudo cp -R ~/your-app /srv/shiny-server/
+  Use code with caution.
+• Manage the Server Service: Use systemctl in your Linux terminal to start, stop, or check the server status:bash
+sudo systemctl start shiny-server
+sudo systemctl status shiny-server
+sudo systemctl restart shiny-server
+Use code with caution.
+• Access the App: By default, Shiny Server listens on port 3838. Open a browser and navigate to http://<your-server-ip>:3838/your-app/.
+• Configuration & Logs:
+  • Settings: Edit /etc/shiny-server/shiny-server.conf to change ports or directory paths.
+• Troubleshooting: Check /var/log/shiny-server/ if an app fails to load or crashes.

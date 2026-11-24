@@ -1,0 +1,11 @@
+name: dsamembershipdashboard
+title: DsaMembershipDashboard
+username: aidanb
+account: aidanb
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 01a20b52-b307-c069-20a4-50dfcfefbc94
+appGuid:
+bundleId:
+url: https://connect.posit.cloud/aidanb/content/01a20b52-b307-c069-20a4-50dfcfefbc94
+version: 1
